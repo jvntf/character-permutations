@@ -29,7 +29,7 @@ export default function App() {
           {permutation.map((char, position) => (
             <img
               key={position}
-              src={`/chars/${position}/${char}.png`}
+              src={`${import.meta.env.BASE_URL}chars/${position}/${char}.png`}
               alt={`position ${position}, character ${char}`}
             />
           ))}
